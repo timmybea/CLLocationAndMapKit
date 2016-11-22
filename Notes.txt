@@ -1,0 +1,11 @@
+CORE LOCATIONS - basic setup
+import core location framework
+make an instance of the location manager
+initialize the location manager
+set the delegate for the location manager
+set the desired accuracy for the locations manager
+request authorization (this can be called at any time)
+set the permission in the info plist
+implement delagates:
+didChangeAuthorization - good place to start or stop updating location.
+didUpdateLocation - implement whatever it is that you want to do with thte location data
