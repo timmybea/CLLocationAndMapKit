@@ -15,6 +15,8 @@
 		B00D6F9A1DE4D45200A6360A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00D6F981DE4D45200A6360A /* LaunchScreen.storyboard */; };
 		B00D6FA61DE4DFB600A6360A /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B00D6FA51DE4DFB600A6360A /* Notes.txt */; };
 		B00D6FA91DE4E30B00A6360A /* LocationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FA81DE4E30B00A6360A /* LocationsManager.m */; };
+		B00D6FAC1DE4F66F00A6360A /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FAB1DE4F66F00A6360A /* DownloadManager.m */; };
+		B00D6FB01DE503E400A6360A /* GeoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FAF1DE503E400A6360A /* GeoImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		B00D6FA51DE4DFB600A6360A /* Notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		B00D6FA71DE4E30B00A6360A /* LocationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsManager.h; sourceTree = "<group>"; };
 		B00D6FA81DE4E30B00A6360A /* LocationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsManager.m; sourceTree = "<group>"; };
+		B00D6FAA1DE4F66F00A6360A /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		B00D6FAB1DE4F66F00A6360A /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		B00D6FAE1DE503E400A6360A /* GeoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoImage.h; sourceTree = "<group>"; };
+		B00D6FAF1DE503E400A6360A /* GeoImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 			children = (
 				B00D6F8D1DE4D45200A6360A /* AppDelegate.h */,
 				B00D6F8E1DE4D45200A6360A /* AppDelegate.m */,
+				B00D6FAE1DE503E400A6360A /* GeoImage.h */,
+				B00D6FAF1DE503E400A6360A /* GeoImage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -115,6 +123,8 @@
 				B00D6F911DE4D45200A6360A /* ViewController.m */,
 				B00D6FA71DE4E30B00A6360A /* LocationsManager.h */,
 				B00D6FA81DE4E30B00A6360A /* LocationsManager.m */,
+				B00D6FAA1DE4F66F00A6360A /* DownloadManager.h */,
+				B00D6FAB1DE4F66F00A6360A /* DownloadManager.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,6 +204,8 @@
 				B00D6FA91DE4E30B00A6360A /* LocationsManager.m in Sources */,
 				B00D6F921DE4D45200A6360A /* ViewController.m in Sources */,
 				B00D6F8F1DE4D45200A6360A /* AppDelegate.m in Sources */,
+				B00D6FB01DE503E400A6360A /* GeoImage.m in Sources */,
+				B00D6FAC1DE4F66F00A6360A /* DownloadManager.m in Sources */,
 				B00D6F8C1DE4D45200A6360A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

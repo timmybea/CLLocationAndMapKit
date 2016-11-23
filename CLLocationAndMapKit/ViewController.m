@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
-
+#import "DownloadManager.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) LocationsManager *locationManager;
+@property (strong, nonatomic) DownloadManager *downloadManager;
+@property (strong, nonatomic) NSArray *geoImages;
 
 @end
 
@@ -20,9 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.locationManager = [[LocationsManager alloc] init];
+ //   self.locationManager = [[LocationsManager alloc] init];
+    self.downloadManager = [[DownloadManager alloc] init];
 
+    [self getPhotos];
+    
+    
 }
 
+
+
+
+- (void)getPhotos {
+    [self.downloadManager downloadPhotos:^(NSArray *geoImages) {
+        self.geoImages = geoImages;
+    }];
+}
 
 @end
