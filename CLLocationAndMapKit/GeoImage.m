@@ -8,29 +8,15 @@
 
 #import "GeoImage.h"
 
-@interface GeoImage()
 
-@property (nonatomic) NSURL *imageURL;
-@property (nonatomic) NSString *title;
+@interface GeoImage() <MKAnnotation>
+
+@property(nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic) NSString *imageId;
 
 @end
 
 @implementation GeoImage
-
-//turn the array of json data into an array of geoImage objects.
-+ (NSArray *)geoImagesWithArray:(NSArray *)array
-{
-    NSMutableArray *arrayOfGeoImages = [[NSMutableArray alloc] init];
-    
-    for(NSDictionary *imageInfo in array)
-    {
-        GeoImage *newGeo = [[GeoImage alloc] initWithImageInfo:imageInfo];
-        [arrayOfGeoImages addObject:newGeo];
-    }
-    return arrayOfGeoImages;
-}
-
 
 - (instancetype)initWithImageInfo:(NSDictionary *)dictionary
 {
@@ -50,6 +36,31 @@
     return self;
 }
 
+//turn the array of json data into an array of geoImage objects.
++ (NSArray *)geoImagesWithArray:(NSArray *)array
+{
+    NSMutableArray *arrayOfGeoImages = [[NSMutableArray alloc] init];
+    
+    for(NSDictionary *imageInfo in array)
+    {
+        GeoImage *newGeo = [[GeoImage alloc] initWithImageInfo:imageInfo];
+        [arrayOfGeoImages addObject:newGeo];
+    }
+    
+    return arrayOfGeoImages;
+}
+
+
+//- (void)coordinateWithDictionary:(NSDictionary *)dictionary
+//{
+// 
+//    NSLog(@"hello");
+//    NSNumber *latitude = [dictionary objectForKey:@"latitude"];
+//    NSNumber *longitude = [dictionary objectForKey:@"longitude"];
+//    
+//    self.coordinate = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+//    
+//}
 
 
 

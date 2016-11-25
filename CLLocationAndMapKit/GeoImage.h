@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface GeoImage : NSObject
 
+@property (nonatomic) NSURL *imageURL;
+@property (nonatomic) NSString *title;
 + (NSArray *)geoImagesWithArray:(NSArray *)array;
+
+//- (void)coordinateWithDictionary:(NSDictionary *)dictionary;
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GeoImage.h"
 
 @interface DownloadManager : NSObject
 
 - (void)downloadPhotos:(void (^)(NSArray *geoImages)) completion;
+- (void)getImageWithURLFromGeoImage:(GeoImage *)geoImage withCompletion:(void (^)(UIImage *image, NSURL *url)) completion;
 
 @end

@@ -17,6 +17,7 @@
 		B00D6FA91DE4E30B00A6360A /* LocationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FA81DE4E30B00A6360A /* LocationsManager.m */; };
 		B00D6FAC1DE4F66F00A6360A /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FAB1DE4F66F00A6360A /* DownloadManager.m */; };
 		B00D6FB01DE503E400A6360A /* GeoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D6FAF1DE503E400A6360A /* GeoImage.m */; };
+		B0151AA31DE5FA4700EFBB42 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0151AA21DE5FA4700EFBB42 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		B00D6FAB1DE4F66F00A6360A /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		B00D6FAE1DE503E400A6360A /* GeoImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoImage.h; sourceTree = "<group>"; };
 		B00D6FAF1DE503E400A6360A /* GeoImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoImage.m; sourceTree = "<group>"; };
+		B0151AA11DE5FA4700EFBB42 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		B0151AA21DE5FA4700EFBB42 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 		B00D6FA11DE4D45B00A6360A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B0151AA11DE5FA4700EFBB42 /* CollectionViewCell.h */,
+				B0151AA21DE5FA4700EFBB42 /* CollectionViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				B00D6F8F1DE4D45200A6360A /* AppDelegate.m in Sources */,
 				B00D6FB01DE503E400A6360A /* GeoImage.m in Sources */,
 				B00D6FAC1DE4F66F00A6360A /* DownloadManager.m in Sources */,
+				B0151AA31DE5FA4700EFBB42 /* CollectionViewCell.m in Sources */,
 				B00D6F8C1DE4D45200A6360A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +369,7 @@
 				B00D6FA01DE4D45200A6360A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
